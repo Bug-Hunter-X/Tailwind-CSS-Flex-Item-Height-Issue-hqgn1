@@ -1,0 +1,11 @@
+```html
+<div class="flex">
+  <div class="bg-red-500 p-4">
+    <!--Some content-->
+  </div>
+  <div class="bg-blue-500 p-4">
+    <!--Some content-->
+  </div>
+</div>
+```
+This code snippet uses Tailwind CSS classes to style two divs within a flex container. However, if you inspect this in a browser, you'll find that the divs don't occupy the entire available space. Instead, they stack vertically. This happens because, by default, flex items have the `align-items: stretch` property. However, this isn't enough when using flex containers with variable heights like the ones in this code.
